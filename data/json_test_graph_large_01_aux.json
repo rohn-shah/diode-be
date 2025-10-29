@@ -1,0 +1,111 @@
+{
+    "D": {
+        "id": 1,
+        "type": "Context",
+        "level": "App"
+    },
+    "Exchange": {
+        "id": 2,
+        "type": "Resource",
+        "level": "App"
+    },
+    "OperationalClock": {
+        "id": 3,
+        "type": "Resource",
+        "level": "App"
+    },
+    "TopController": {
+        "id": 4,
+        "type": "Resource",
+        "level": "App"
+    },
+    "AccountManager": {
+        "id": 5,
+        "type": "Resource",
+        "level": "App"
+    },
+    "OrderDispatch": {
+        "id": 6,
+        "type": "Resource",
+        "level": "App"
+    },
+    "SP500": {
+        "id": 7,
+        "type": "Context",
+        "subtype": "Target",
+        "level": "App"
+    },
+    "NASDAQ": {
+        "id": 30,
+        "type": "Context",
+        "subtype": "Target",
+        "level": "App"
+    },
+    "GBP_USD": {
+        "id": 40,
+        "type": "Context",
+        "subtype": "Target",
+        "level": "App"
+    },
+    "SP500_001": {
+        "id": 8,
+        "type": "Context",
+        "level": "Cluster"
+    },
+    "SP500_002": {
+        "id": 20,
+        "type": "Context",
+        "level": "Cluster"
+    },
+    "SP500_003": {
+        "id": 30,
+        "type": "Context",
+        "level": "Cluster"
+    },
+    "NASDAQ_001": {
+        "id": 31,
+        "type": "Context",
+        "level": "Cluster"
+    },
+    "GBP_USD_001": {
+        "id": 41,
+        "type": "Context",
+        "level": "Cluster"
+    },
+    "DataFeed": {
+        "id": 21,
+        "type": "Resource",
+        "subtype": "DataFeed",
+        "level": "Cluster"
+    },
+    "DataManager": {
+        "id": 22,
+        "type": "Resource",
+        "subtype": "DataManager",
+        "level": "Cluster"
+    },
+    "FactorEngine": {
+        "id": 23,
+        "type": "Resource",
+        "subtype": "FactorEngine",
+        "level": "Cluster"
+    },
+    "TrendModel": {
+        "id": 24,
+        "type": "Resource",
+        "subtype": "TrendModel",
+        "level": "Cluster"
+    },
+    "DecisionEngine": {
+        "id": 25,
+        "type": "Resource",
+        "subtype": "DecisionEngine",
+        "level": "Cluster"
+    },
+    "OrderConstructor": {
+        "id": 26,
+        "type": "Resource",
+        "subtype": "OrderConstructor",
+        "level": "Cluster"
+    }
+}

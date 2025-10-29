@@ -1,0 +1,32 @@
+{
+    "D": [
+        "Exchange",
+        "OperationalClock",
+        "SP500",
+        "NASDAQ",
+        "GBP_USD",
+        "IG_Connection",
+        "TopController",
+        "AccountManager",
+        "OrderDispatch"
+    ],
+    "SP500": [
+        "SP500_001",
+        "SP500_002",
+        "SP500_003"
+    ],
+    "NASDAQ": [
+        "NASDAQ_001"
+    ],
+    "GBP_USD": [
+        "GBP_USD_001"
+    ],
+    "SP500_002": [
+        "DataFeed",
+        "DataManager",
+        "FactorEngine",
+        "TrendModel",
+        "DecisionEngine",
+        "OrderConstructor"
+    ]
+}
