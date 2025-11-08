@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 
 // Import API routes
 const apiRoutes = require('./src/api');
+const authRoutes = require('./src/routes/authRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -58,6 +59,7 @@ app.get('/graph', (_req, res) => {
 })});
 
 // Mount API routes
+app.use('/api/auth', authRoutes);
 app.use('/api', apiRoutes);
 
 // Error handling middleware
