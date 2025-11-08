@@ -13,9 +13,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
-// Enable CORS with exposed headers for React Admin
+// Enable CORS with exposed headers for React Admin (using X-Total-Count for Vercel compatibility)
 app.use(cors({
-  exposedHeaders: ['Content-Range', 'X-Content-Range']
+  exposedHeaders: ['X-Total-Count']
 }));
 
 // Parse JSON bodies
