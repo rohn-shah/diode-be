@@ -7,6 +7,9 @@ const Company = require('../models/Company');
 const User = require('../models/User');
 const Employee = require('../models/Employee');
 
+// Import controllers
+const userController = require('../controllers/userController');
+
 const router = express.Router();
 
 // Company endpoints
@@ -17,6 +20,10 @@ router.use('/company', raExpressMongoose(Company, {
 }));
 
 // User endpoints (belongs to Company)
+// Custom POST endpoint to send set password email
+router.post('/user', userController.createUser);
+
+// Other user CRUD operations handled by ra-express-mongoose
 router.use('/user', raExpressMongoose(User, {
   q: ['firstName', 'lastName', 'email'],
   allowedRegexFields: ['firstName', 'lastName', 'department'],
